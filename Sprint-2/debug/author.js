@@ -11,6 +11,8 @@ const author = {
   alive: true,
 };
 
-for (const value of author) {
-  console.log(value);
+for (const value in author) {
+  console.log(author[value]);
 }
+
+// The for of loop does nt work with objects without giving  Object.values(), we can add this method to the loop or we can use for in loop which accesses to each value in the object.

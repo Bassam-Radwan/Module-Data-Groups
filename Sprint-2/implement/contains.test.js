@@ -1,5 +1,5 @@
+const { default: test } = require("test");
 const contains = require("./contains.js");
-
 /*
 Implement a function called contains that checks an object contains a
 particular property
@@ -20,8 +20,15 @@ as the object doesn't contains a key of 'c'
 // Given an empty object
 // When passed to contains
 // Then it should return false
-test.todo("contains on empty object returns false");
+// test("return false " , () => {
+//   const currentOutput = true;
+//   const targetOutput = true;
+//   expect(currentOutput).toEqual(targetOutput);
+// });
 
+test("works at all?", () => {
+  expect(1 + 1).toBe(2);
+});
 // Given an object with properties
 // When passed to contains with an existing property name
 // Then it should return true

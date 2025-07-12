@@ -12,4 +12,7 @@ const address = {
   postcode: "XYZ 123",
 };
 
-console.log(`My house number is ${address[0]}`);
+
+console.log(`My house number is ${address.houseNumber}`);
+
+// The key should have quotation, we can't access a key by its index because it isn't an array. 
